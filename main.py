@@ -5,8 +5,10 @@ from spider import Spider
 from domain import *
 from general import *
 
-PROJECT_NAME = 'guri'
-HOMEPAGE = 'http://gurwindersingh.in/'
+
+
+PROJECT_NAME = raw_input("Enter the project name: ")
+HOMEPAGE = raw_input("Enter the url of the website:  ")
 DOMAIN_NAME = get_domain_name(HOMEPAGE)
 QUEUE_FILE = PROJECT_NAME + '/queue.txt'
 CRAWLED_FILE = PROJECT_NAME + '/crawled.txt'
