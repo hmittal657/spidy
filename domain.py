@@ -1,5 +1,6 @@
 import urlparse
 
+# this function gets the subdomain correspoding to the url
 def get_sub_domain_name(url):
 	try:
 
@@ -8,6 +9,7 @@ def get_sub_domain_name(url):
 	except:
 		return ''
 
+# this function extracts the domain name from the subdomain name
 def get_domain_name(url):
 	try:
 		results = get_sub_domain_name(url).split('.')
